@@ -205,8 +205,37 @@
     color: #888;
     font-size: 16px;
 }
+.random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0 80px 0;
+}
+
 .result{
-background-color:lightblue;
-width:200px;    
-height:50px;
+    margin-top: 15px;
+}
+
+.btn-rand{
+    padding: 0;
+    width: 341px;
+    height: 35px;
+    border:1px solid #F97300;
+background:#F97300;
+color:#fff;
+}
+
+.form-rand {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.min, .max {
+    margin-right: 10px;
+}
+
+.label-min{
+    display: flex;
+    flex-direction: column;
 }

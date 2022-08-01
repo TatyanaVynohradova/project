@@ -219,18 +219,28 @@
             </form>
         </div>
     </div>
+<div class="random" id="generator">
+        <form name="random" class="form-rand">
+            <label for="min" class="label-min">
+                Min number
+                <input type="number" id="min" class="min" placegolder="MIN number" name="min">
+            </label> 
+            
+            <label for="max" class="label-min">
+                Max number
+                <input type="number" class="max" placegolder="MAX number" name="max">
+            </label>
+            
+            <input type="button" name="getRandom" class="btn-rand btn btn-outline-secondary"
+            onclick="document.querySelector('.result').innerText=Math.floor(Math.random() * (document.querySelector('.max').value - document.querySelector('.min').value + 1)) + Number(document.querySelector('.min').value)
+            "value="Згенерувати число"/>
+        </form>
 
-<form name="random"> 
-        <input type="number" class="min" placegolder="MIN number" name="min">
-        <br>
-        <input type="number" class="max" placegolder="MAX number" name="max">
-        <br>
-        <input type="button" name="getRandom"
-        onclick="document.querySelector('.result').innerText=Math.floor(Math.random() * (document.querySelector('.max').value - document.querySelector('.min').value + 1)) + Number(document.querySelector('.min').value)
-        "value="Згенерувати число">
-    </form>
+        <h1 class="result">Result</h1>
+    </div>
 
-    <div class="result"></div>
+
+    
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
